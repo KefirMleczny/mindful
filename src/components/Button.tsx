@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "outline";
   href?: string;
   children: React.ReactNode;
 }
@@ -21,6 +21,7 @@ export default function Button({
     primary: "bg-forest text-cream-light hover:bg-forest-hover shadow-sm hover:shadow-md",
     secondary: "bg-terracotta text-cream-light hover:bg-terracotta-hover shadow-sm hover:shadow-md",
     ghost: "text-forest hover:text-forest-hover bg-transparent hover:bg-sage-light/50",
+    outline: "border border-forest text-forest hover:bg-forest hover:text-cream-light bg-transparent shadow-sm hover:shadow-md",
   };
 
   const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;

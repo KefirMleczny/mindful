@@ -31,6 +31,7 @@ export default function OfferSection() {
         "Praca z ciałem, oddechem i umysłem",
         "Elastyczne terminy spotkań",
         "Dostępne online lub w gabinecie",
+        "Wsparcie mailowe pomiędzy sesjami",
       ],
       ctaText: "Umów sesję",
       ctaHref: "#kontakt",
@@ -45,6 +46,7 @@ export default function OfferSection() {
         "Intensywne warsztaty praktyczne",
         "Zdrowe, wegetariańskie wyżywienie",
         "Praca w gronie osób o podobnych intencjach",
+        "Czas na integrację i relaks w naturze",
       ],
       ctaText: "Zobacz terminy",
       ctaHref: "#kontakt",
@@ -68,7 +70,7 @@ export default function OfferSection() {
               key={idx}
               className={`flex flex-col rounded-3xl p-6 sm:p-8 transition-all duration-300 relative ${
                 offer.featured
-                  ? "bg-cream-light border-2 border-sage-dark shadow-md md:-translate-y-3 z-10"
+                  ? "bg-cream-light border-2 border-sage-dark shadow-md z-10"
                   : "bg-cream-light/60 border border-sage-medium/20 shadow-sm hover:shadow-md"
               }`}
             >
@@ -89,15 +91,20 @@ export default function OfferSection() {
                 />
               </div>
 
-              <div className="mb-6 flex-grow">
-                <h3 className="font-serif text-2xl sm:text-3xl font-light text-forest mb-4">
-                  {offer.title}
-                </h3>
-                <p className="text-sm sm:text-base text-graphite/75 font-light leading-relaxed mb-6">
+              <div className="mb-6 flex-grow flex flex-col">
+                {/* Title aligned with min-height */}
+                <div className="min-h-[3rem] sm:min-h-[4rem] flex items-center mb-4">
+                  <h3 className="font-serif text-2xl sm:text-3xl font-light text-forest leading-tight">
+                    {offer.title}
+                  </h3>
+                </div>
+                
+                {/* Description aligned with min-height */}
+                <p className="text-sm sm:text-base text-graphite/75 font-light leading-relaxed mb-6 min-h-[4.5rem] md:min-h-[5.5rem] lg:min-h-[4.5rem]">
                   {offer.desc}
                 </p>
 
-                <hr className="border-sage-medium/20 my-6" />
+                <hr className="border-sage-medium/20 my-6 mt-auto" />
 
                 <ul className="space-y-3.5">
                   {offer.points.map((point, pIdx) => (
@@ -112,7 +119,7 @@ export default function OfferSection() {
               <div className="pt-6">
                 <Button
                   href={offer.ctaHref}
-                  variant={offer.featured ? "primary" : "ghost"}
+                  variant={offer.featured ? "primary" : "outline"}
                   className="w-full text-sm sm:text-base py-3"
                 >
                   {offer.ctaText}
