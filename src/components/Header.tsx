@@ -61,9 +61,10 @@ export default function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-graphite/80 hover:text-forest transition-colors duration-200 text-sm font-light tracking-wide"
+                className="relative text-graphite/80 hover:text-sage-dark transition-colors duration-300 text-sm font-light tracking-wide group py-1"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-sage-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </a>
             ))}
           </nav>
@@ -96,7 +97,7 @@ export default function Header() {
                 key={item.label}
                 href={item.href}
                 onClick={closeMenu}
-                className="text-graphite/90 hover:text-forest transition-colors py-2 text-base font-light border-b border-sage-light/35 last:border-0"
+                className="text-graphite/90 hover:text-sage-dark transition-colors duration-200 py-2 text-base font-light border-b border-sage-light/35 last:border-0"
               >
                 {item.label}
               </a>

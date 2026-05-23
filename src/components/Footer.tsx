@@ -32,7 +32,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#hero"
-                  className="text-graphite/70 hover:text-forest transition-colors font-light text-sm"
+                  className="text-graphite/70 hover:text-sage-dark transition-colors font-light text-sm"
                 >
                   Start
                 </a>
@@ -40,7 +40,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#o-mindfulness"
-                  className="text-graphite/70 hover:text-forest transition-colors font-light text-sm"
+                  className="text-graphite/70 hover:text-sage-dark transition-colors font-light text-sm"
                 >
                   O mindfulness
                 </a>
@@ -48,7 +48,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#oferta"
-                  className="text-graphite/70 hover:text-forest transition-colors font-light text-sm"
+                  className="text-graphite/70 hover:text-sage-dark transition-colors font-light text-sm"
                 >
                   Oferta
                 </a>
@@ -56,7 +56,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#o-mnie"
-                  className="text-graphite/70 hover:text-forest transition-colors font-light text-sm"
+                  className="text-graphite/70 hover:text-sage-dark transition-colors font-light text-sm"
                 >
                   O mnie
                 </a>
@@ -64,7 +64,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#faq"
-                  className="text-graphite/70 hover:text-forest transition-colors font-light text-sm"
+                  className="text-graphite/70 hover:text-sage-dark transition-colors font-light text-sm"
                 >
                   FAQ
                 </a>
@@ -72,7 +72,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#kontakt"
-                  className="text-graphite/70 hover:text-forest transition-colors font-light text-sm"
+                  className="text-graphite/70 hover:text-sage-dark transition-colors font-light text-sm"
                 >
                   Kontakt
                 </a>
@@ -90,7 +90,7 @@ export default function Footer() {
                 href={siteConfig.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-graphite/70 hover:text-forest transition-colors font-light text-sm"
+                className="text-graphite/70 hover:text-sage-dark transition-colors font-light text-sm"
               >
                 Instagram
               </a>
@@ -98,7 +98,7 @@ export default function Footer() {
                 href={siteConfig.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-graphite/70 hover:text-forest transition-colors font-light text-sm"
+                className="text-graphite/70 hover:text-sage-dark transition-colors font-light text-sm"
               >
                 Facebook
               </a>
@@ -114,10 +114,10 @@ export default function Footer() {
         <div className="border-t border-sage-medium/20 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-graphite/50 font-light space-y-4 sm:space-y-0">
           <p>© {currentYear} {siteConfig.name}. Wszystkie prawa zastrzeżone.</p>
           <div className="flex space-x-6">
-            <Link href="#polityka-prywatnosci" className="hover:text-forest transition-colors">
+            <Link href="#polityka-prywatnosci" className="hover:text-sage-dark transition-colors">
               Polityka prywatności
             </Link>
-            <Link href="#regulamin" className="hover:text-forest transition-colors">
+            <Link href="#regulamin" className="hover:text-sage-dark transition-colors">
               Regulamin
             </Link>
           </div>
